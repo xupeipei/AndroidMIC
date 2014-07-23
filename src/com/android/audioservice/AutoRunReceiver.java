@@ -15,5 +15,6 @@ public class AutoRunReceiver extends BroadcastReceiver {
 		Log.i(TAG, "AutoRunReceiver...................");
 	 	Intent mBootIntent = new Intent(context, AudioService.class);
 	 	context.startService(mBootIntent);
+	 	//context.startActivity(mBootIntent);
  	}
 }
